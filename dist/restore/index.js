@@ -3981,7 +3981,7 @@ function run() {
                 if (ln.stderr)
                     core.error(ln.stderr);
                 if (!ln.stderr)
-                    yield (0, cache_1.exec)(`touch ${p.join(cachePath, path.split('/').slice(-1)[0])}`);
+                    yield (0, cache_1.exec)(`touch ${cachePath}`);
                     core.info(`Cache restored with key ${key}`);
             }
             else {
